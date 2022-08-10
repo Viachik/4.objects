@@ -13,7 +13,7 @@ function solveEquation(a, b, c) {
 }
 
 
-console.log(solveEquation(1, 1, 1))
+console.log(solveEquation(1, 4, 1))
 
 /*
 function calculateTotalMortgage(percent, contribution, amount, date) {
