@@ -5,14 +5,14 @@ function solveEquation(a, b, c) {
 
   if (D < 0) {
     return [];
-  } else if (D = 0) {
+  } else if (D === 0) {
     return [-b/2*a];
   } else {
     return [(-b + Math.sqrt(D))/2*a, (-b - Math.sqrt(D))/2*a];
   }
 }
 
-console.log(solveEquation(1, 4, 1))
+console.log(solveEquation(1, 2, 1))
 
 /*
 function calculateTotalMortgage(percent, contribution, amount, date) {
