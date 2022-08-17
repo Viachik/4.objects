@@ -56,8 +56,8 @@ console.log(makeWork([[0, 0, 0], [-1, -100]], worker));
 
 // Задание 3
 function worker2(arr) {
-  let min = 0;
-  let max = 0;
+  let min = arr[0];
+  let max = arr[0];
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
@@ -69,22 +69,7 @@ function worker2(arr) {
   }
   return Math.abs(max - min)
 }
-/*
-function makeWork(arr, func) {
-  let max = 0;
-  let result = 0;
 
-  for (let i = 0; i < arr.length; i++) {
-    result = func(arr[i]);
-  }
-
-  if (result > max) {
-    max = result;
-  }
-  
-  return max;
-}
-*/
 console.log(makeWork([[10, 20, 30], [-40, -50, -65]], worker2));
 console.log(makeWork([[10, 10, 11], [20, 10]], worker2));
 console.log(makeWork([[0, 1, 2], [-1, -100]], worker2));
