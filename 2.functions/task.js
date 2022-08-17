@@ -69,7 +69,7 @@ function worker2(arr) {
   }
   return Math.abs(max - min)
 }
-
+/*
 function makeWork(arr, func) {
   let max = 0;
   let result = 0;
@@ -84,7 +84,7 @@ function makeWork(arr, func) {
   
   return max;
 }
-
+*/
 console.log(makeWork([[10, 20, 30], [-40, -50, -65]], worker2));
 console.log(makeWork([[10, 10, 11], [20, 10]], worker2));
 console.log(makeWork([[0, 1, 2], [-1, -100]], worker2));
