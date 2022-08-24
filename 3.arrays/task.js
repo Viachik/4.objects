@@ -4,9 +4,7 @@ function compareArrays(arr1, arr2) {
 }
 
 function advancedFilter(arr) {
-  let resultArr;
+ 
+  return (arr.filter(number => number % 3 ===0 && number > 0)).map(number => number*10);
 
-  // Ваш код
-
-  return resultArr; // array
 }
