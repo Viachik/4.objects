@@ -25,8 +25,8 @@ student1.addMark(5);
 student2.addMark(2);
 
 Student.prototype.addMarks = function (...mark) {
-  if(this.mark === undefined){ 
-    this.marks = [mark];
+  if(this.marks === undefined){ 
+    this.marks = [...mark];
   } else {
     this.marks.push(...mark);
   }
@@ -37,9 +37,9 @@ student1.addMark(5);
 student2.addMark(3);
 student2.addMark(2);
 
-Student.prototype.getAverage = function (marks) {
+Student.prototype.getAverage = function () {
   const avarage = this.marks.reduce((acc, mark)=> acc + mark, 0)/this.marks.length;
-  return Math.round(avarage);
+  return avarage;
 }
 
 console.log(student1.getAverage());
