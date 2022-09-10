@@ -45,6 +45,7 @@ Student.prototype.getAverage = function (marks) {
 console.log(student1.getAverage());
 console.log(student1);
 
+/*
 Student.prototype.exclude = function (reason) {
   if (this.student.hasOwnProperty('subject')) {
     delete this.subject;
@@ -54,15 +55,14 @@ Student.prototype.exclude = function (reason) {
   }
   this.excluded = reason;
 }
+*/
 
-student2.exclude('low grades')
-console.log(student2)
-
-/*
 Student.prototype.exclude = function (reason) {
   delete this.subject;
   delete this.marks;
 
   this.excluded = reason;
 }
-*/
+
+student2.exclude('low grades')
+console.log(student2)
