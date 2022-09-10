@@ -47,10 +47,10 @@ console.log(student1);
 
 /*
 Student.prototype.exclude = function (reason) {
-  if (this.student.hasOwnProperty('subject')) {
+  if (this.hasOwnProperty('subject')) {
     delete this.subject;
   }
-  if (this.student.hasOwnProperty('marks')) {
+  if (this.hasOwnProperty('marks')) {
     delete this.marks;
   }
   this.excluded = reason;
@@ -63,6 +63,7 @@ Student.prototype.exclude = function (reason) {
 
   this.excluded = reason;
 }
+
 
 student2.exclude('low grades')
 console.log(student2)
